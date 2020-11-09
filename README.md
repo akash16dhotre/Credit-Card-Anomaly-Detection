@@ -20,3 +20,11 @@ The number of neighbors considered, (parameter n_neighbors) is typically chosen:
 
 Greater than the minimum number of objects a cluster has to contain, so that other objects can be local outliers relative to this cluster
 Smaller than the maximum number of close by objects that can potentially be local outliers. In practice, such pieces of information are generally not available, and taking n_neighbors=20 appears to work well in general.
+
+## Random Forest
+
+Random forest is a supervised learning algorithm. The "forest" it builds, is an ensemble of decision trees, usually trained with the “bagging” method. The general idea of the bagging method is that a combination of learning models increases the overall result.
+
+Put simply: random forest builds multiple decision trees and merges them together to get a more accurate and stable prediction.
+
+One big advantage of random forest is that it can be used for both classification and regression problems, which form the majority of current machine learning systems. Let's look at random forest in classification, since classification is sometimes considered the building block of machine learning.
