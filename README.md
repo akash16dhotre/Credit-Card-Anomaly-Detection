@@ -13,7 +13,7 @@ How Isolation Forests Work The Isolation Forest algorithm isolates observations 
 
 The way that the algorithm constructs the separation is by first creating isolation trees, or random decision trees. Then, the score is calculated as the path length to isolate the observation.
 
-## Local Outlier Factor(LOF) Algorithm
+## Local Outlier Factor(LOF) Algorithm:
 The LOF algorithm is an unsupervised outlier detection method that computes a given data point's local density deviation with respect to its neighbors. It considers as outlier samples that have a substantially lower density than their neighbors.
 
 The number of neighbors considered, (parameter n_neighbors) is typically chosen:
@@ -21,7 +21,7 @@ The number of neighbors considered, (parameter n_neighbors) is typically chosen:
 Greater than the minimum number of objects a cluster has to contain, so that other objects can be local outliers relative to this cluster
 Smaller than the maximum number of close by objects that can potentially be local outliers. In practice, such pieces of information are generally not available, and taking n_neighbors=20 appears to work well in general.
 
-## Random Forest
+## Random Forest:
 
 Random forest is a supervised learning algorithm. The "forest" it builds, is an ensemble of decision trees, usually trained with the “bagging” method. The general idea of the bagging method is that a combination of learning models increases the overall result.
 
